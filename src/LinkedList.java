@@ -1,7 +1,7 @@
 public class LinkedList {
     protected Node start,end; // referencias para saber donde esta el start y el end
 	
-	public LinkedList() { 
+	public void LinkedList() { 
 		start = null;
 		end = null;
 	}
@@ -16,8 +16,7 @@ public class LinkedList {
 		}
 	}
 	// Método para mostrar los datos
-	public void mostrarLinkedList () {
-		
+	public void showLinkedList () {
 		Node iterate = start;
 		System.out.println();
 		while (iterate != null) {

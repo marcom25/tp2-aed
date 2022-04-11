@@ -11,7 +11,6 @@ public class App {
         
         do {
             try {
-            
                 System.out.println("Bienvenido al menú. Por favor, seleccione una opción:" + "\n" + "i.   (1) Insertar numero" + "\n" + "ii.  (2) Mostrar lista" + "\n" +"iii. (3) Salir");
             
                 option = input.nextInt();
@@ -29,7 +28,7 @@ public class App {
                     case 2:
                         try {
                             System.out.println("Mostrando lista: ");
-                            list.mostrarLinkedList();
+                            list.showLinkedList();
                             System.out.println();
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -38,11 +37,11 @@ public class App {
                     case 3:
                         break;   
                 }
-                input.close();
+                
             } catch (Exception e) {
                 e.printStackTrace();
             }
         } while (option != 3);
+        input.close();
     }
-
 }
