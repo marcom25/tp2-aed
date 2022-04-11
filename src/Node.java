@@ -1,6 +1,6 @@
 public class Node {
     public Object dato;
-	public Nodo siguiente; //referencia enlace
+	public Node siguiente; //referencia enlace
 		
 		// constructor para insertar al final
 	public Node (int d) {
@@ -9,9 +9,8 @@ public class Node {
 	}
 		
 		// Constructor para insertar al inicio
-	public Node (int d, Nodo n) {
-			dato = d;
-			siguiente = n;
-			
+	public Node (int d, Node n) {
+		dato = d;
+		siguiente = n;
 	}
 }

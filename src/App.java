@@ -4,7 +4,7 @@ public class App {
 
     public static void main(String[] args) {
 
-        lista listita = new lista();
+        LinkedList listita = new LinkedList();
         int opcion = 0, el;
         
         Scanner entrada = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class App {
                     case 2:
                         try {
                             System.out.println("Mostrando lista: ");
-                            listita.mostrarLista();
+                            listita.mostrarLinkedList();
                             System.out.println();
                         } catch (Exception e) {
                             e.printStackTrace();
