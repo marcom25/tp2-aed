@@ -3,7 +3,7 @@ public class Node {
 	public Node siguiente; //referencia enlace
 		
 		// constructor para insertar al final
-	public Node (int d) {
+	public Node (int d) { 
 		this.dato =d;
 			
 	}
@@ -12,5 +12,6 @@ public class Node {
 	public Node (int d, Node n) {
 		dato = d;
 		siguiente = n;
+	
 	}
 }

@@ -1,7 +1,7 @@
 public class LinkedList {
     protected Node inicio,fin; // referencias para saber donde esta el inicio y el fin
 	
-	public void LinkedList () {
+	public void LinkedList () { 
 		inicio = null;
 		fin = null;
 	}
