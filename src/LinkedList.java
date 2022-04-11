@@ -2,7 +2,7 @@ public class LinkedList {
     protected Node start; // referencias para saber donde esta el start y el end
 	public int countData;
 
-	public void LinkedList() { 
+	public LinkedList() { 
 		start = null;
 		countData = 0;
 	}
