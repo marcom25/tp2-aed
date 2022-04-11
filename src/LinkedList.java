@@ -1,29 +1,28 @@
 public class LinkedList {
-    protected Node inicio,fin; // referencias para saber donde esta el inicio y el fin
+    protected Node start,end; // referencias para saber donde esta el start y el end
 	
-	public void LinkedList () { 
-		inicio = null;
-		fin = null;
+	public LinkedList() { 
+		start = null;
+		end = null;
 	}
 	
-	// Metodo para agregar un Node al inicio de la LinkedList
+	// Método para agregar un Nodo al inicio de la LinkedList
 	
-	public void agregarAlInicio (int elemento) {
+	public void addNode (int element) {
 		// Creando el Node
-		inicio = new Node(elemento, inicio);
-		if (fin==null) {
-			fin=inicio;
+		start = new Node(element, start);
+		if (end==null) {
+			end=start;
 		}
 	}
-	// Metodo para mostrar los datos
+	// Método para mostrar los datos
 	public void mostrarLinkedList () {
 		
-		Node recorrer = inicio;
+		Node iterate = start;
 		System.out.println();
-		while (recorrer != null) {
-			System.out.print("[" + recorrer.dato + "]---->");
-			recorrer = recorrer.siguiente;
+		while (iterate != null) {
+			System.out.print("[" + iterate.data + "]---->");
+			iterate = iterate.next;
 		}
-		
 	}
 }

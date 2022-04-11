@@ -4,24 +4,24 @@ public class App {
 
     public static void main(String[] args) {
 
-        LinkedList listita = new LinkedList();
-        int opcion = 0, el;
+        LinkedList list = new LinkedList();
+        int option = 0, element;
         
-        Scanner entrada = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         
         do {
             try {
             
-                System.out.println("Bienvenido al menu, por favor seleccione una opcion:" + "\n" + "i.   (1) Insertar numero" + "\n" + "ii.  (2) Mostrar lista" + "\n" +"iii. (3) Salir");
+                System.out.println("Bienvenido al menú. Por favor, seleccione una opción:" + "\n" + "i.   (1) Insertar numero" + "\n" + "ii.  (2) Mostrar lista" + "\n" +"iii. (3) Salir");
             
-                opcion = entrada.nextInt();
+                option = input.nextInt();
             
-                switch (opcion) {
+                switch (option) {
                     case 1:
                         try {
-                            System.out.println("Ingrese un numero");
-                            el = entrada.nextInt();
-                            listita.agregarAlInicio(el);
+                            System.out.println("Ingrese un número");
+                            element = input.nextInt();
+                            list.addNode(element);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -29,21 +29,20 @@ public class App {
                     case 2:
                         try {
                             System.out.println("Mostrando lista: ");
-                            listita.mostrarLinkedList();
+                            list.mostrarLinkedList();
                             System.out.println();
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
                         break;
                     case 3:
-                        break;
-                    
-                    
+                        break;   
                 }
+                input.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        } while (opcion != 3);
+        } while (option != 3);
     }
 
 }
