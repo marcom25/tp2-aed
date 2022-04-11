@@ -4,7 +4,8 @@ import java.util.Scanner;
 public class App { 
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
-        int option = 0, element;
+        int element;
+        int option = 0;
 
         System.out.println("Bienvenido al menú!");
         Scanner input = new Scanner(System.in);
