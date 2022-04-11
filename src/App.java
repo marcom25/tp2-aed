@@ -20,7 +20,11 @@ public class App {
                         try {
                             System.out.println("Ingrese un número");
                             element = input.nextInt();
-                            list.addNode(element);
+                            if (element == 0) {
+                                list.addNodeInStart(element);
+                            } else {
+                                list.addNodeInFinal(element);
+                            }
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
