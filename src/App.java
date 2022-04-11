@@ -4,22 +4,22 @@ import java.util.Scanner;
 public class App { 
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
-        int element;
+        Object element;
         int option = 0;
 
-        System.out.println("Bienvenido al menú!");
+        System.out.println("Bienvenido al menu!");
         Scanner input = new Scanner(System.in);
         do {
             try {
-                System.out.println("Seleccione una opción:" + "\n" + "i.   (1) Insertar numero" + "\n" + "ii.  (2) Mostrar lista" + "\n" +"iii. (3) Salir");
+                System.out.println("Seleccione una opcion:" + "\n" + "I-   (1) Insertar un dato" + "\n" + "II-  (2) Mostrar lista" + "\n" +"III- (3) Salir");
 
                 option = input.nextInt();
                 switch (option) {
                     case 1:
-                        System.out.print("Ingrese un número: ");
-                        element = input.nextInt();
+                        System.out.print("Ingrese un dato: ");
+                        element = input.next();
                         list.addNode(element);
-                        System.out.println("Número ingresado!");
+                        System.out.println("Dato ingresado!");
                         break;
                     case 2:
                         System.out.println("Mostrando lista: ");
@@ -33,7 +33,7 @@ public class App {
                 }
             } catch (InputMismatchException e) {
                 input.next();
-                System.out.println("Por favor, ingrese una opción válida.");
+                System.out.println("Por favor, ingrese una opcion valida.");
             }
         } while (option != 3);
         input.close();

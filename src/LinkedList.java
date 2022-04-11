@@ -10,7 +10,7 @@ public class LinkedList {
     }
 
     // Agrega un nodo al final de la lista
-    public void addNode(int element) {
+    public void addNode(Object element) {
         Node newNode = new Node(element, null);
         if (this.start == null) {
             this.start = newNode;
@@ -29,9 +29,9 @@ public class LinkedList {
     public void print() {
         Node currentNode = start;
         while (currentNode.getNext() != null) {
-            System.out.print("[" + currentNode.getData() + "]---->");
+            System.out.print("[ " + currentNode.getData() + " ]---->");
             currentNode = currentNode.getNext();
         }
-        System.out.print("[" + currentNode.getData() + "]---->");
+        System.out.print("[ " + currentNode.getData() + " ]---->");
     }
 }
