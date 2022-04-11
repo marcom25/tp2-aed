@@ -1,26 +1,26 @@
 public class Node {
     public Object data;
-	public Node next; //referencia enlace
-		
-		// Constructor para insertar al inicio
-	public Node (int data, Node next) {
-		this.data = data;
-		this.next = next;
-	}
+    // Referencia enlace
+    public Node next;
 
-	public Object getData() {
-		return data;
-	}
+    public Node(int data, Node next) {
+        this.data = data;
+        this.next = next;
+    }
 
-	public void setData(int data) {
-		this.data = data;
-	}
+    public Object getData() {
+        return this.data;
+    }
 
-	public Node getNext() {
-		return next;
-	}
+    public void setData(int data) {
+        this.data = data;
+    }
 
-	public void setNext(Node next) {
-		this.next = next;
-	}
+    public Node getNext() {
+        return this.next;
+    }
+
+    public void setNext(Node next) {
+        this.next = next;
+    }
 }
